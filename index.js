@@ -3,6 +3,7 @@ const PORT=3000;
 const cors = require('cors');
 const quizRouter = require("./router/quiz.router");
 const {loginRouter, signupRouter}= require("./router/auth.router");
+const routeNotFound = require("./middleware/routNotFound");
 
 const app=express();
 app.use(express.json());
@@ -15,6 +16,7 @@ app.get("/", (req, res)=>{
 app.use("/quiz", quizRouter);
 app.use("/auth/login", loginRouter);
 app.use("/auth/signup", signupRouter);
+app.use(routeNotFound);
 
 
 app.listen(process.env.PORT || PORT, ()=>{

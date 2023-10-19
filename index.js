@@ -2,7 +2,7 @@ const express = require('express');
 const PORT=3000;
 const cors = require('cors');
 const quizRouter = require("./router/quiz.router");
-const { loginRouter, sigupRouter } = require("./router/auth.router");
+const {loginRouter, sigupRouter} = require("./router/auth.router");
 
 const app=express();
 app.use(express.json());

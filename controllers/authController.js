@@ -15,17 +15,18 @@ const authVerify = (req, res, next) => {
 
 }
 
-const signupHandler = (req,res)=>{
+const signupHandler = (req, res) => {
     const { username, password } = req.body;
-    const isUserPresent=userdata.users.some(user=>ServiceWorker.username === user);
-    if(isUserPresent){
-        res.state(422).json({message : "User alredy exits"});
+    //Duplicate user
+    const isUserPresent = userdata.users.some(user => user.username === username);
+    if (isUserPresent){
+        res.status(422).json({ message: "User Already Exists"})
     }else{
         const id = uuid();
-        const newUser = { id, username, password};
-        userdata.users = [ ...userdata.users, newUser];
-        const token = jwt.sign({id: username}, process.env.SECRET_TOKEN);
-        res.json({message : `Successfully created new user --> ${username} :: ${token}`});
+        const newUser = { id, username, password };
+        userdata.users = [...userdata.users, newUser];
+        const token = jwt.sign({ id: username }, process.env.SECRET_TOKEN);
+        res.json({ message: `Success - Created new user --> ${username}::${token}`})
     }
 }
 

@@ -59,49 +59,99 @@ const quizzes = {
         //2nd quiz
         {
             id: uuid(),
-            category: "dc",
-            image: "https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(56)(110).jpg",
-            title: "DC",
+            category: "css",
+            image: "https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo",
+            title: "CSS",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique quis nunc eget rutrum",
             quiz: [
                 {
                     id: uuid(),
-                    question: "What was Wonder Woman originally named?",
+                    question: "How can we change the background color of aan element?",
                     options: [
-                        { id: uuid(), option: "Anita", isCorrect: false },
-                        { id: uuid(), option: "Suprema", isCorrect: true },
-                        { id: uuid(), option: "Mishita", isCorrect: false },
+                        { id: uuid(), option: "background-color", isCorrect: true},
+                        { id: uuid(), option: "color", isCorrect: false },
+                        { id: uuid(), option: "Both A and B", isCorrect: false },
                         { id: uuid(), option: "None", isCorrect: false }
                     ]
                 },
                 {
                     id: uuid(),
-                    question: "Which supervillain was once the Iranian Ambassador to the U.N.?",
+                    question: "What type of CSS is generally recommended for designing large web pages?",
                     options: [
-                        { id: uuid(), option: "Wonder Man", isCorrect: false },
-                        { id: uuid(), option: "Superman", isCorrect: false },
-                        { id: uuid(), option: "The Joker", isCorrect: true },
-                        { id: uuid(), option: "Batman", isCorrect: false }
+                        { id: uuid(), option: "Inline", isCorrect: false },
+                        { id: uuid(), option: "Internal", isCorrect: false },
+                        { id: uuid(), option: "External", isCorrect: true },
+                        { id: uuid(), option: "None of the above", isCorrect: false }
                     ]
                 },
                 {
                     id: uuid(),
-                    question: "What is batman's favorite food?",
+                    question: "Can negative values be allowed in padding property?",
                     options: [
-                        { id: uuid(), option: "Chicken Salad", isCorrect: false },
-                        { id: uuid(), option: "Turkey Roast", isCorrect: false },
-                        { id: uuid(), option: "Goat Ribbs", isCorrect: false },
-                        { id: uuid(), option: "Mulligatawny soup", isCorrect: true }
+                        { id: uuid(), option: "Yes", isCorrect: false },
+                        { id: uuid(), option: "No", isCorrect: true },
+                        { id: uuid(), option: "Depends on property", isCorrect: false },
+                        { id: uuid(), option: "None of the above", isCorrect: false }
                     ]
                 },
                 {
                     id: uuid(),
-                    question: "In how many seconds can Green Arrow shoot and reload?",
+                    question: "The CSS property used to specify the transparency of an element is?",
                     options: [
-                        { id: uuid(), option: "Two and a half seconds", isCorrect: true },
-                        { id: uuid(), option: "Two seconds", isCorrect: false },
-                        { id: uuid(), option: "One seconds", isCorrect: false },
-                        { id: uuid(), option: "One and a half seconds", isCorrect: false }
+                        { id: uuid(), option: "Opacity", isCorrect: true },
+                        { id: uuid(), option: "Visibility", isCorrect: false },
+                        { id: uuid(), option: "Filter", isCorrect: false },
+                        { id: uuid(), option: "None of the above", isCorrect: false }
+                    ]
+                },
+            ]
+        },
+        //Quiz 3rd
+        {
+            id: uuid(),
+            category: "javaScript",
+            image: "https://img.freepik.com/premium-vector/computer-design-blue-background-vector-illustration_24908-44354.jpg?w=360",
+            title: "JavaScript",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique quis nunc eget rutrum",
+            quiz: [
+                {
+                    id: uuid(),
+                    question: "JavaScript is an ______ language?",
+                    options: [
+                        { id: uuid(), option: "Object-Oriented", isCorrect: true},
+                        { id: uuid(), option: "Object-Based", isCorrect: false },
+                        { id: uuid(), option: "Procedural", isCorrect: false },
+                        { id: uuid(), option: "None of the above", isCorrect: false }
+                    ]
+                },
+                {
+                    id: uuid(),
+                    question: "Which of the following keywords is used to define a variable in Javascript?",
+                    options: [
+                        { id: uuid(), option: "var", isCorrect: false },
+                        { id: uuid(), option: "let", isCorrect: false },
+                        { id: uuid(), option: "Both A and B", isCorrect: true },
+                        { id: uuid(), option: "None of the above", isCorrect: false }
+                    ]
+                },
+                {
+                    id: uuid(),
+                    question: "What is the use of the <noscript> tag in Javascript?",
+                    options: [
+                        { id: uuid(), option: "The contents are displayed by non-JS-based browsers", isCorrect: true },
+                        { id: uuid(), option: "Clears all the cookies and cache", isCorrect: false },
+                        { id: uuid(), option: "Both A and B", isCorrect: false },
+                        { id: uuid(), option: "None of the above", isCorrect: false }
+                    ]
+                },
+                {
+                    id: uuid(),
+                    question: "When an operator's value is NULL, the typeof returned by the unary operator is?",
+                    options: [
+                        { id: uuid(), option: "Boolean", isCorrect: false },
+                        { id: uuid(), option: "Undefined", isCorrect: false },
+                        { id: uuid(), option: "Object", isCorrect: true },
+                        { id: uuid(), option: "Integer", isCorrect: false }
                     ]
                 },
             ]

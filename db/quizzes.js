@@ -62,7 +62,7 @@ const quizzes = {
             category: "css",
             image: "https://play-lh.googleusercontent.com/RTAZb9E639F4JBcuBRTPEk9_92I-kaKgBMw4LFxTGhdCQeqWukXh74rTngbQpBVGxqo",
             title: "CSS",
-            description: "CSS (Cascading Style Sheets) is used to style and layout web pages.",
+            description: "CSS (Cascading Style Sheets) is used to style and layout web pages.For example - font, size and color.",
             quiz: [
                 {
                     id: uuid(),
